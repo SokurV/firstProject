@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <title>Site of Company</title>
 </head>
 <body>
     <header>
-        <div>
-            <h1 class="header__logo"><a href="#">MyCompany</a></h1>
-        </div>
+        <h1 class="header__logo"><a href="#">MyCompany</a></h1>
+        <div class="icon" id="burger_button">&#9776</div>
         <nav>
-            <ul class="container_menu">
+            <ul class="container_menu" id="menu">
                 <li><a class="menu" href="#home">Home</a></li>
-                <li><a class="menu" href="#">About</a></li>
+                <li><a class="menu" href="#about">About</a></li>
                 <li><a class="menu" href="#">Services</a></li>
                 <li><a class="menu" href="#">Portfolio</a></li>
                 <li><a class="menu" href="#">testimonials</a></li>
@@ -27,9 +26,18 @@
         </nav>
     </header>
     
-    
+    <div class="container_home" id="home">
+        <h2 class="home_words">Welcome on <span class="home_words home_words_orange">mycompany</span></h2>
+        <p class="home_words_low">We are a digital agency with <b>years of experience</b>
+                                  and with <b>extraordynary people</b></p>
+    </div>
 
+
+    <div class="container_about" id="about">
+        
+    </div>
 
     <script src="scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
-</html>
+</html> 
