@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    width: calc(100vw);
+    width: calc(100vw - 17px);
     height: 60px;
     background: #000;
     padding: 20px 12vw;
@@ -32,7 +32,7 @@ header {
     font-weight: 800;
 }
 
-.container_menu {
+.container__menu {
     list-style: none;
     display: flex;
 }
@@ -64,7 +64,7 @@ header {
     transition: 500ms;
 }
 
-.container_home {
+.container__home {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -74,25 +74,25 @@ header {
     background-color: #000;
 }
 
-.home_words {
+.home__words {
     text-transform: uppercase; 
     color: #999;
     font-size: 32px;
     font-weight: 200;
 }
 
-.home_words_orange {
+.home__words_orange {
     color: orange;
     font-weight: 800;
 }
 
-.home_words_low {
+.home__words_low {
     color: #999;
     font-size: 16px;
 }
 
 
-.container_about {
+.container__about {
     height: 100vh;
     background-color: #FFF;
 }
@@ -100,7 +100,7 @@ header {
 
 
 @media screen and (max-width: 1050px) {
-    .container_menu {
+    .container__menu {
         display: none;
     }
 
