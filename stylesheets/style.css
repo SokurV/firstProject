@@ -93,9 +93,80 @@ header {
 
 
 .container__about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    padding-top: 60px;
     background-color: #FFF;
 }
+
+.about__left {
+    max-width: 33.8vw;
+    max-height: 27.3vw;
+    margin-right: 12vw;
+}
+
+.about__right {
+    width: 27vw;
+    max-width: 365px;
+}
+
+.about__right h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #fcac45;
+}
+
+.about__right h2 span {
+    font-weight: 800;
+}
+
+.about__right p {
+    margin: 30px 0;
+    font-size: 16px;
+    color: #6c6c6c;
+}
+
+.about__right ul {
+    list-style: none;
+    position: relative;
+}
+
+.about__right li::before {
+    content: url(../img/marker.png);
+    position: relative;
+    top: 1px;
+}
+
+.about__right li {
+    font-family: 'Semibold';
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.5em;
+    padding: 3px 0;
+    color: #6c6c6c;
+}
+
+.about__right ul span {
+    font-family: 'Open Sans';
+    color: #000;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.about__right ul span::before {
+    content: "";
+    padding-left: 10px;
+}
+
+
+
+
+
 
 
 
