@@ -11,6 +11,8 @@ a {
 }
 
 body {
+    width: calc(100vw - 17px);
+    min-width: 320px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -66,17 +68,12 @@ header {
     transition: 500ms;
 }
 
-main {
-    width: calc(100vw - 17px);
-}
-
 .container__home {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
     height: 100vh;
-    padding: 0 10vw;
+    padding: 0 50px;
     background-color: #000;
 }
 
@@ -85,6 +82,7 @@ main {
     color: #999;
     font-size: 32px;
     font-weight: 200;
+    margin-bottom: 0;
 }
 
 .home__words_orange {
@@ -95,12 +93,13 @@ main {
 .home__words_low {
     color: #999;
     font-size: 16px;
+    margin-top: 0;
 }
-
 
 .container__about {
     min-height: 100vh;
     margin-top: 60px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,14 +107,14 @@ main {
 }
 
 .about__left {
-    max-width: 33.8vw;
-    max-height: 27.3vw;
+    max-width: 365px;
+    height: auto;
     margin-right: 10vw;
 }
 
 .about__right {
-    width: 27vw;
     max-width: 365px;
+    height: auto;
 }
 
 .about__right h2 {
@@ -134,6 +133,7 @@ main {
 .about__right p {
     margin: 30px 0;
     font-size: 16px;
+    text-align: justify;
     color: #6c6c6c;
 }
 
@@ -327,6 +327,7 @@ main {
     background: #000;
     text-align: center;
     padding: 0 50px;
+    padding-bottom: 25px;
 }
 
 .container__clients span,
@@ -364,6 +365,7 @@ main {
 }
 
 .portfolio__grid {
+    box-sizing: content-box;
     max-width: 1142px;
     margin: 90px auto;
     padding: 0;
@@ -371,10 +373,10 @@ main {
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
     justify-items: space-between;
     grid-gap: 30px;
-    box-sizing: content-box;
 }
 
 .portfolio__grid img {
+    width: 263px;
     margin: 0;
 }
 
@@ -383,6 +385,7 @@ main {
     background: #000;
     color: #FFF;
     padding: 0 50px;
+    padding-bottom: 50px;
 }
 
 .testi__text {
@@ -418,7 +421,7 @@ main {
 
 .form__wrapper {
     max-width: 752px;
-    margin: 60px auto;
+    margin: 40px auto;
     display: grid;
     grid-template-areas: "name email"
                          "message message"
@@ -427,6 +430,7 @@ main {
 
 .wrapper__name {
     grid-area: name;
+    margin-top: 20px;
     margin-right: 28px;
 }
 
@@ -442,6 +446,7 @@ main {
 
 .wrapper__email {
     grid-area: email;
+    margin-top: 20px;
 }
 
 .wrapper__message {
@@ -493,18 +498,19 @@ main {
 }
 
 .container__footer {
+    width: calc(100vw - 17px);
     height: 92px;
     background: #222;
     display: flex;
     justify-content: center;
-    padding: 0 50px;
+    align-items: flex-start;
+    padding: 0;
 }
 
 .container__footer li {
     list-style: none;
     display: inline-block;
     margin: 0 7px;
-    margin-top: 31px;
 }
 
 .container__footer img {
@@ -518,7 +524,25 @@ main {
     transition: 500ms;
 }
 
-@media screen and (max-width: 1050px) {
+@media (max-width: 1258px) {
+    .portfolio__grid {
+        max-width: 849px;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    }
+    .grid__col4 {display: none;}
+}
+
+@media (max-width: 1080px) {
+    .container__about {
+        flex-direction: column;
+    }
+    .about__left {
+        margin: 60px auto;
+    }
+}
+
+/*Адаптивное меню*/
+@media (max-width: 1050px) {
     .container__menu {
         display: none;
     }
@@ -543,5 +567,76 @@ main {
         display: block;
         position: absolute;
         right: 5vw;
+    }
+}
+
+/*Две колонки в OUR WORK*/
+@media (max-width: 966px) {
+    .portfolio__grid {
+        max-width: 556px;
+        grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    }
+    .grid__col3 {display: none;}
+}
+
+
+/*Адаптивка раздела Contact US*/
+@media  (max-width: 869px) {
+    .form__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper__name {
+        margin-right: 0;
+    }
+
+    #message {
+        width: 362px;
+        min-height: 165px;
+        resize: vertical;
+    }
+}
+
+/*Одна колонка в OUR WORK*/
+@media (max-width: 673px) {
+    .portfolio__grid {
+        max-width: 556px;
+        grid-template: 1fr 1fr 1fr / 1fr;
+        justify-items: center;
+    }
+    .grid__col2 {display: none;}
+    .about__left {display: none;}
+}
+
+@media screen and (max-width: 536px) {
+    .container__portfolio h2 {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header,
+    main,
+    .container__footer {
+        width: 100vw;
+    }
+
+    #name,
+    #email,
+    #message {
+        max-width: 300px;
+    }
+
+    *, span, h1, h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen {
+    * {
+        padding: auto 0;
+        margin: auto 0;
     }
 }
