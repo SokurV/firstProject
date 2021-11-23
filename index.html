@@ -21,8 +21,8 @@
                 <li><a class="menu" href="#about">About</a></li>
                 <li><a class="menu" href="#services">Services</a></li>
                 <li><a class="menu" href="#portfolio">Portfolio</a></li>
-                <li><a class="menu" href="#">testimonials</a></li>
-                <li><a class="menu" href="#">Contact</a></li>
+                <li><a class="menu" href="#testimonials">testimonials</a></li>
+                <li><a class="menu" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -85,7 +85,8 @@
         <div class="container__services" id="services">
             <h2>OUR SERVICES</h2>
             <div class="line_text"></div>
-            <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores
+            <p class="services__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores
                 minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur. Lorem ipsum dolor sit
                 amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime
                 possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.
@@ -118,23 +119,24 @@
             <h2><span>SOME OF</span> OUR CLIENTS</h2>
             <div class="line_text"></div>
             <div class="clients__logos">
-                <a href="#" target="_blank"><img src="img/logos/chanel.png" alt="Chanel logo" title="Chanel"></a>
-                <a href="#" target="_blank"><img src="img/logos/zara.png" alt="Zara logo" title="Zara"></a>
-                <a href="#" target="_blank"><img src="img/logos/guerlain.png" alt="Guerlain logo" title="Guerlain"></a>
-                <a href="#" target="_blank"><img src="img/logos/lancome.png" alt="Lancome logo" title="Lancome"></a>
-                <a href="#" target="_blank"><img src="img/logos/lacoste.png" alt="Lacoste logo" title="Lacoste"></a>
+                <a href="#" target="_blank"><img src="img/logos_clients/chanel.png" alt="Chanel logo" title="Chanel"></a>
+                <a href="#" target="_blank"><img src="img/logos_clients/zara.png" alt="Zara logo" title="Zara"></a>
+                <a href="#" target="_blank"><img src="img/logos_clients/guerlain.png" alt="Guerlain logo" title="Guerlain"></a>
+                <a href="#" target="_blank"><img src="img/logos_clients/lancome.png" alt="Lancome logo" title="Lancome"></a>
+                <a href="#" target="_blank"><img src="img/logos_clients/lacoste.png" alt="Lacoste logo" title="Lacoste"></a>
             </div>
         </div>
 
         <div class="container__portfolio" id="portfolio">
             <h2><span>TAKE A LOOK AT</span> OUR WORK</h2>
             <div class="line_text"></div>
-            <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem 
-                                        maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto 
-                                        assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, 
-                                        consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at 
-                                        asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi 
-                                        porro ipsa tenetur.
+            <p class="portfolio__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem 
+                maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto 
+                assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at 
+                asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi 
+                porro ipsa tenetur.
             </p>
             <div class="portfolio__grid">
                 <img src="img/portfolio/row_1.png" alt="Mystery" title="Mystery">
@@ -152,9 +154,56 @@
             </div>
         </div>
 
+        <div class="container__testimonials" id="testimonials">
+            <h2><span>OUR CLIENT'S</span> TESTIMONIALS</h2>
+            <div class="line_text"></div>
+            <blockquote class="testi__text">
+                This book is a treatise on the theory of ethics, very popular during the Renaissance. 
+                The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in 
+                section 1.10.32.
+            </blockquote>
+            <cite>Dean Martin, CEO Acme Inc.</cite>
+        </div>
 
+        <div class="container__contact" id="contact">
+            <h2>CONTACT US</h2>
+            <div class="line_text"></div>
+            <p class="contact__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem 
+                maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto 
+                assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. 
+            </p>
+            <form action="#" method="get" class="form__wrapper">
+                <div class="wrapper__name">
+                    <label for="name">Name <span>*</span></label>
+                    <input type="text" id="name" name="name" maxlength="30" required>
+                </div>
+                <div class="wrapper__email">
+                    <label for="email">Email address <span>*</span></label>
+                    <input type="email" id="email" name="email" maxlength="45" required>
+                </div>
+                <div class="wrapper__message">
+                    <label for="message">Message <span>*</span></label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="wrapper__button">
+                    <button type="submit" id="submit" name="submit" class="button__send">SEND</button>
+                </div>
+            </form>
+        </div>
     </main>
 
+    <footer class="container__footer">
+        <ul>
+            <li><a href="#" title="Facebook"><img src="img/logos_footer/facebook.png" alt="Facebook"></a></li>
+            <li><a href="#" title="Twitter"><img src="img/logos_footer/twitter.png" alt="Twitter"></a></li>
+            <li><a href="#" title="Google"><img src="img/logos_footer/google.png" alt="Google"></a></li>
+            <li><a href="#" title="Linkedin"><img src="img/logos_footer/linkedin.png" alt="Linkedin"></a></li>
+            <li><a href="#" title="Dribble"><img src="img/logos_footer/dribbble.png" alt="Dribble"></a></li>
+        </ul>
+    </footer>
+    
     <script src="scripts/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
