@@ -10,6 +10,10 @@ a {
     color: #FFF;
 }
 
+html {
+    /*scroll-behavior: smooth;*/
+}
+
 body {
     width: calc(100vw - 17px);
     min-width: 320px;
@@ -499,6 +503,7 @@ header {
     border-radius: 6px;
     margin-top: 20px;
     float: right;
+    cursor: pointer;
 }
 
 .form__wrapper button:active {
